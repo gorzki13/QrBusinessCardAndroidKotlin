@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basic_nav"
+    app:startDestination="@id/businessCardListFragment">
+
+    <fragment
+        android:id="@+id/businessCardListFragment"
+        android:name="com.jg.QrBusinessCard.BusinessCardListFragment"
+        android:label="fragment_business_card_list"
+        tools:layout="@layout/fragment_business_card_list" />
+    <fragment
+        android:id="@+id/qrCodeFragment"
+        android:name="com.jg.QrBusinessCard.QrCodeFragment"
+        android:label="fragment_qr_code"
+        tools:layout="@layout/fragment_qr_code" >
+        <action
+            android:id="@+id/action_qrCodeFragment_to_businessCardListFragment"
+            app:destination="@id/businessCardListFragment" />
+    </fragment>
+</navigation>
