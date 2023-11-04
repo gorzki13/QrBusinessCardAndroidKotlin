@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/businessCardListFragment"
-        android:name="com.jg.QrBusinessCard.BusinessCardListFragment"
+        android:name="com.jg.QrBusinessCard.CartListView.BusinessCardListFragment"
         android:label="fragment_business_card_list"
         tools:layout="@layout/fragment_business_card_list" />
     <fragment
         android:id="@+id/qrCodeFragment"
-        android:name="com.jg.QrBusinessCard.QrCodeFragment"
+        android:name="com.jg.QrBusinessCard.QrCode.QrCodeFragment"
         android:label="fragment_qr_code"
         tools:layout="@layout/fragment_qr_code" >
         <action
