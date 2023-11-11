@@ -20,7 +20,7 @@ class BusinessCardListAdapter(context: Context, entries: MutableList<BusinessCar
         this.entries = entries
     }
 
-    fun updateBusinessCardsList(businessCards: ArrayList<BusinessCard>) {
+    fun updateBusinessCardsList(businessCards: MutableList<BusinessCard>) {
         this.entries = businessCards
         notifyDataSetChanged()
     }
